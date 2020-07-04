@@ -81,7 +81,15 @@ for(let i=0; i < massive.length; i++){
 // Задание 8:
 // Напишите функцию removeDuplicates(arr), которая возвращает массив, 
 // в котором удалены повторяющиеся элементы из массива arr (игнорируйте чувствительность к регистру).
+let arr = [`MEGABANK`, `MEGABANK`, `PRIVATBANK`, `PRIVATBANK`, `SBERBANK`, `SBERBANK`]
+function removeDuplicates(arr) {
+    let result = [];
 
+   
+    
+}
+    
+    document.write(result);
 
 // Задание 9:
 // Напишите функцию countIdentic(arr), которая возвращает количество повторяющихся элементов в массиве.
