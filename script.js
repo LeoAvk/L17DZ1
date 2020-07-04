@@ -24,3 +24,14 @@ for(let i = 0; i < massiv.length; i++){
     result *= massiv[i];
 }
 console.log(result);
+
+// Задание 4:
+// Дан массив с элементами 2, 5, 9, 15, 1, 4. 
+// С помощью цикла for и оператора if выведите в консоль те элементы массива, 
+// которые больше 3-х, но меньше 10.
+let massiv = [2, 5, 9, 15, 1, 4];
+for (let i = 0; i < massiv.length; i++){
+    if(massiv[i] > 3 && massiv[i] < 10){
+        console.log(massiv[i]);
+    }
+}
