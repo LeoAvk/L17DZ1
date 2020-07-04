@@ -52,10 +52,31 @@ console.log(result);
 // Дан массив числами, например: [10, 20, 30, 50, 235, 3000]. 
 // Выведите на экран только те числа из массива, которые начинаются на цифру 1, 2 или 5.
 let massiv = [10, 20, 30, 50, 235, 3000];
+for (let i = 0; i < massiv.length; i++) {
+    if( String (massiv[i])[0] == 1 || String (massiv[i])[0] == 2 || String (massiv[i])[0] == 5 ){
+        console.log(massiv[i]);
+    }
+}
+
+
+let massiv = ['10', '20','30', '50', '235', '3000'];
+for (let i = 0; i < massiv.length; i++) {
+    if( massiv[i][0] == 1 || massiv[i][0] == 2 || massiv[i][0] == 5 ){
+        console.log(massiv[i]);
+    }
+}
 
 // Задание 7:
 // Составьте массив дней недели. С помощью цикла for выведите все дни недели, а выходные дни выведите жирным.
-let massive = [`Понедельник`, `Вторник` `Среда` `Четверг` `Пятница` `Суббота` `Воскресенье`];
+
+let massive = [`Понедельник`, `Вторник`, `Среда`, `Четверг`, `Пятница`, `Суббота`, `Воскресенье`];
+for(let i=0; i < massive.length; i++){
+    if(i == 5 || i == 6){
+        document.write( `<strong>` + massive[i] + ` ` + `</strong`)
+    } else{
+        document.write(massive[i] + ` `)
+    }
+}
 
 // Задание 8:
 // Напишите функцию removeDuplicates(arr), которая возвращает массив, 
